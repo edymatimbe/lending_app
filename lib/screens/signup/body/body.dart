@@ -14,9 +14,9 @@ class _BodyState extends State<Body> {
   final firstNameControl = TextEditingController();
   final lastNameControl = TextEditingController();
   final emailControl = TextEditingController();
-  final addressControl = TextEditingController();
-  final countryControl = TextEditingController();
-  final cityControl = TextEditingController();
+  // final addressControl = TextEditingController();
+  // final countryControl = TextEditingController();
+  // final cityControl = TextEditingController();
   final numberControl = TextEditingController();
   final passControl = TextEditingController();
   final confirmPassControl = TextEditingController();
@@ -57,7 +57,7 @@ class _BodyState extends State<Body> {
           child: Icon(Icons.mail),
         ),
         contentPadding: EdgeInsets.symmetric(vertical: 20, horizontal: 15),
-        hintText: "Insira o seu email",
+        hintText: "Insira seu email",
         border: OutlineInputBorder(
           borderRadius: BorderRadius.all(Radius.circular(8)),
         ),
@@ -83,66 +83,66 @@ class _BodyState extends State<Body> {
         ),
       ),
     );
-    final addressField = TextFormField(
-      autofocus: false,
-      controller: addressControl,
-      keyboardType: TextInputType.text,
-      onSaved: (value) {
-        addressControl.text = value!;
-      },
-      textInputAction: TextInputAction.next,
-      decoration: const InputDecoration(
-        prefixIcon: Padding(
-          padding: EdgeInsets.symmetric(horizontal: 10),
-          child: Icon(Icons.location_on),
-        ),
-        contentPadding: EdgeInsets.symmetric(vertical: 20, horizontal: 15),
-        hintText: "Insira o seu endereço",
-        border: OutlineInputBorder(
-          borderRadius: BorderRadius.all(Radius.circular(8)),
-        ),
-      ),
-    );
-    final countryField = TextFormField(
-      autofocus: false,
-      controller: countryControl,
-      keyboardType: TextInputType.name,
-      onSaved: (value) {
-        countryControl.text = value!;
-      },
-      textInputAction: TextInputAction.next,
-      decoration: const InputDecoration(
-        prefixIcon: Padding(
-          padding: EdgeInsets.symmetric(horizontal: 10),
-          child: Icon(Icons.public),
-        ),
-        contentPadding: EdgeInsets.symmetric(vertical: 20, horizontal: 15),
-        hintText: "Insira o seu País",
-        border: OutlineInputBorder(
-          borderRadius: BorderRadius.all(Radius.circular(8)),
-        ),
-      ),
-    );
-    final cityField = TextFormField(
-      autofocus: false,
-      controller: cityControl,
-      keyboardType: TextInputType.name,
-      onSaved: (value) {
-        cityControl.text = value!;
-      },
-      textInputAction: TextInputAction.next,
-      decoration: const InputDecoration(
-        prefixIcon: Padding(
-          padding: EdgeInsets.symmetric(horizontal: 10),
-          child: Icon(Icons.public),
-        ),
-        contentPadding: EdgeInsets.symmetric(vertical: 20, horizontal: 15),
-        hintText: "Insira a sua cidade",
-        border: OutlineInputBorder(
-          borderRadius: BorderRadius.all(Radius.circular(8)),
-        ),
-      ),
-    );
+    // final addressField = TextFormField(
+    //   autofocus: false,
+    //   controller: addressControl,
+    //   keyboardType: TextInputType.text,
+    //   onSaved: (value) {
+    //     addressControl.text = value!;
+    //   },
+    //   textInputAction: TextInputAction.next,
+    //   decoration: const InputDecoration(
+    //     prefixIcon: Padding(
+    //       padding: EdgeInsets.symmetric(horizontal: 10),
+    //       child: Icon(Icons.location_on),
+    //     ),
+    //     contentPadding: EdgeInsets.symmetric(vertical: 20, horizontal: 15),
+    //     hintText: "Insira o seu endereço",
+    //     border: OutlineInputBorder(
+    //       borderRadius: BorderRadius.all(Radius.circular(8)),
+    //     ),
+    //   ),
+    // );
+    // final countryField = TextFormField(
+    //   autofocus: false,
+    //   controller: countryControl,
+    //   keyboardType: TextInputType.name,
+    //   onSaved: (value) {
+    //     countryControl.text = value!;
+    //   },
+    //   textInputAction: TextInputAction.next,
+    //   decoration: const InputDecoration(
+    //     prefixIcon: Padding(
+    //       padding: EdgeInsets.symmetric(horizontal: 10),
+    //       child: Icon(Icons.public),
+    //     ),
+    //     contentPadding: EdgeInsets.symmetric(vertical: 20, horizontal: 15),
+    //     hintText: "Insira o seu País",
+    //     border: OutlineInputBorder(
+    //       borderRadius: BorderRadius.all(Radius.circular(8)),
+    //     ),
+    //   ),
+    // );
+    // final cityField = TextFormField(
+    //   autofocus: false,
+    //   controller: cityControl,
+    //   keyboardType: TextInputType.name,
+    //   onSaved: (value) {
+    //     cityControl.text = value!;
+    //   },
+    //   textInputAction: TextInputAction.next,
+    //   decoration: const InputDecoration(
+    //     prefixIcon: Padding(
+    //       padding: EdgeInsets.symmetric(horizontal: 10),
+    //       child: Icon(Icons.public),
+    //     ),
+    //     contentPadding: EdgeInsets.symmetric(vertical: 20, horizontal: 15),
+    //     hintText: "Insira a sua cidade",
+    //     border: OutlineInputBorder(
+    //       borderRadius: BorderRadius.all(Radius.circular(8)),
+    //     ),
+    //   ),
+    // );
     final numberField = TextFormField(
       autofocus: false,
       controller: numberControl,
@@ -157,7 +157,7 @@ class _BodyState extends State<Body> {
           child: Icon(Icons.phone),
         ),
         contentPadding: EdgeInsets.symmetric(vertical: 20, horizontal: 15),
-        hintText: "Insira o seu número de telemóvel",
+        hintText: "Insira seu número",
         border: OutlineInputBorder(
           borderRadius: BorderRadius.all(Radius.circular(8)),
         ),
@@ -177,7 +177,7 @@ class _BodyState extends State<Body> {
           child: Icon(Icons.vpn_key),
         ),
         contentPadding: EdgeInsets.symmetric(vertical: 20, horizontal: 15),
-        hintText: "Insira o seu password",
+        hintText: "Insira seu password",
         border: OutlineInputBorder(
           borderRadius: BorderRadius.all(Radius.circular(8)),
         ),
@@ -197,7 +197,7 @@ class _BodyState extends State<Body> {
           child: Icon(Icons.vpn_key),
         ),
         contentPadding: EdgeInsets.symmetric(vertical: 20, horizontal: 15),
-        hintText: "Confirme o seu password",
+        hintText: "Confirme seu password",
         border: OutlineInputBorder(
           borderRadius: BorderRadius.all(Radius.circular(8)),
         ),
@@ -252,10 +252,6 @@ class _BodyState extends State<Body> {
                 lastNameField,
                 const SizedBox(height: 15),
                 emailField,
-                const SizedBox(height: 15),
-                countryField,
-                const SizedBox(height: 15),
-                addressField,
                 const SizedBox(height: 15),
                 numberField,
                 const SizedBox(height: 15),

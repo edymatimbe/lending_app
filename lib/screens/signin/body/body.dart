@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:lending_app/screens/home/home.dart';
 import 'package:lending_app/screens/signup/signup.dart';
 
 class Body extends StatefulWidget {
@@ -66,7 +67,10 @@ class _BodyState extends State<Body> {
       child: MaterialButton(
         padding: const EdgeInsets.symmetric(vertical: 20, horizontal: 15),
         minWidth: MediaQuery.of(context).size.width,
-        onPressed: () => {},
+        onPressed: () => {
+          Navigator.pushReplacement(context,
+              MaterialPageRoute(builder: (context) => const HomeScreen()))
+        },
         child: const Text(
           "Entrar",
           textAlign: TextAlign.center,
