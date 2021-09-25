@@ -82,7 +82,10 @@ class _BodyState extends State<Body> {
     return Scaffold(
       appBar: AppBar(
         title: Text(
-          'Meus Emprestismos',
+          'Olá ${loggedInUser.firstName} veja os seus Emprestismos',
+          style: const TextStyle(
+            fontSize: 16,
+          ),
         ),
         actions: <Widget>[
           IconButton(
