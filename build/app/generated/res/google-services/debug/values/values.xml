@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">1062855173554-sr7flk1s2q11jre6l966id2b7kb6q5u4.apps.googleusercontent.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">1062855173554</string>
+    <string name="google_api_key" translatable="false">AIzaSyDpccr0DNACd0E7YKeHABrtA9ZevX3em7c</string>
+    <string name="google_app_id" translatable="false">1:1062855173554:android:e44617acca6e057648b0ab</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyDpccr0DNACd0E7YKeHABrtA9ZevX3em7c</string>
+    <string name="google_storage_bucket" translatable="false">lending-app-a585f.appspot.com</string>
+    <string name="project_id" translatable="false">lending-app-a585f</string>
+</resources>

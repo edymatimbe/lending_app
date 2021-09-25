@@ -6,10 +6,10 @@ class SignUpSCreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      extendBodyBehindAppBar: true,
+      // extendBodyBehindAppBar: true,
       appBar: AppBar(
         backgroundColor: Colors.transparent,
-        elevation: 0,
+        elevation: 0.0,
         leading: IconButton(
           icon: const Icon(
             Icons.arrow_back,
